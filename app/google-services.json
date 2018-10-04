@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1046314316378",
+    "firebase_url": "https://dorpon-social-networking-app.firebaseio.com",
+    "project_id": "dorpon-social-networking-app",
+    "storage_bucket": "dorpon-social-networking-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1046314316378:android:1243bb81bf872e1f",
+        "android_client_info": {
+          "package_name": "com.example.khokan.dorpon"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1046314316378-6s4nc3k318478mcusulu86ujdllfdhrj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.khokan.dorpon",
+            "certificate_hash": "207a8840446b03a0c0896e7f8aa13b8758b8bda8"
+          }
+        },
+        {
+          "client_id": "1046314316378-o3ck35v824qkvb15p28rh8b6d3akphol.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDIZ3GyEhZrTRgdzkpI0h05A_p__1TmH3o"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1046314316378-o3ck35v824qkvb15p28rh8b6d3akphol.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
