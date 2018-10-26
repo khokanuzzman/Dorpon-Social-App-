@@ -1,9 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorProfile"
     tools:context="com.example.khokan.dorpon.FindsFriendsActivity">
 
-</android.support.constraint.ConstraintLayout>
+    <include android:id="@+id/nav_find_friends_appbar"
+        layout="@layout/app_bar_layout"
+        ></include>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/my_layout"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/nav_find_friends_appbar"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:id="@+id/simpleTextID"
+            android:text="Search For People and Friends From Any where......."
+            android:textColor="@android:color/background_light"
+            android:textSize="18sp"
+            />
+        <EditText
+            android:id="@+id/search_box_input_text"
+            android:layout_width="280dp"
+            android:layout_height="70dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/simpleTextID"
+            android:layout_marginStart="21dp"
+            android:background="@drawable/inputs"
+            android:ems="10"
+            android:layout_marginTop="10dp"
+            android:inputType="textMultiLine"
+            android:padding="10dp"
+            android:hint="search here"
+            android:textColorHint="@color/colorProfile"
+            />
+        <ImageButton
+            android:id="@+id/search_people_firends_button"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/simpleTextID"
+            android:layout_toEndOf="@id/search_box_input_text"
+            android:src="@drawable/search"
+            android:background="@drawable/inputs"
+            android:contentDescription="imageButton for search friends" />
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/search_result_list"
+        android:layout_margin="10dp"
+        android:layout_below="@id/my_layout"
+        >
+
+
+    </android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>

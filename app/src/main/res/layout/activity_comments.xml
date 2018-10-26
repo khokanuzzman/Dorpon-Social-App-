@@ -1,9 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/mainBackground"
     tools:context="com.example.khokan.dorpon.CommentsActivity">
 
-</android.support.constraint.ConstraintLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Comments:"
+        android:textStyle="bold"
+        android:layout_margin="5dp"
+        android:id="@+id/textView" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/comments_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/comment_input_text"
+        android:layout_alignParentStart="true"
+        android:layout_alignStart="@+id/textView"
+
+        android:layout_below="@+id/textView"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp" />
+
+    <EditText
+        android:id="@+id/comment_input_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/inputs"
+        android:padding="15dp"
+        android:hint="write a comment here...."
+        android:inputType="textMultiLine"
+        android:layout_marginRight="55dp"
+        />
+
+    <ImageButton
+        android:id="@+id/post_comment_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:padding="15dp"
+        android:src="@drawable/post_comment" />
+</RelativeLayout>

@@ -1,9 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/register"
     tools:context="com.example.khokan.dorpon.PostActivity">
 
-</android.support.constraint.ConstraintLayout>
+    <include
+        android:id="@+id/update_page_abb_bar"
+        layout="@layout/app_bar_layout" />
+
+    <ImageButton
+        android:id="@+id/select_post_image"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_alignParentStart="true"
+        android:scaleType="fitCenter"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/update_page_abb_bar"
+        app:srcCompat="@drawable/select_image" />
+
+    <EditText
+        android:id="@+id/update_post_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/select_post_image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/inputs"
+        android:ems="10"
+        android:hint="Write Something About Your Image Here.."
+        android:inputType="textMultiLine"
+        android:padding="10dp" />
+
+    <Button
+        android:id="@+id/update_post_button"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/update_post_description"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/button"
+        android:padding="10dp"
+        android:text="Update Post"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+
+</RelativeLayout>

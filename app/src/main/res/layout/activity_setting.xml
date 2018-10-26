@@ -1,9 +1,158 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/register"
     tools:context="com.example.khokan.dorpon.SettingActivity">
 
-</android.support.constraint.ConstraintLayout>
+    <include android:id="@+id/setting_app_bar"
+        layout="@layout/app_bar_layout"></include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/setting_app_bar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/setting_profile_image"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/profile"
+                />
+            <EditText
+                android:id="@+id/setting_user_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/setting_profile_image"
+                android:background="@drawable/inputs"
+                android:padding="30dp"
+                android:hint="user status"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"
+                android:textColor="@android:color/background_dark"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginTop="4dp"
+                />
+
+            <EditText
+                android:id="@+id/setting_user_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/setting_user_status"
+                android:background="@drawable/inputs"
+                android:padding="10dp"
+                android:hint="user name"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:textColor="@android:color/background_dark"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginTop="30dp"
+                />
+            <EditText
+                android:id="@+id/setting_user_full_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/setting_user_name"
+                android:background="@drawable/inputs"
+                android:padding="10dp"
+                android:hint="user full name"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:textColor="@android:color/background_dark"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginTop="6dp"
+                />
+            <EditText
+                android:id="@+id/setting_user_country"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/setting_user_full_name"
+                android:background="@drawable/inputs"
+                android:padding="10dp"
+                android:hint="country"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:textColor="@android:color/background_dark"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginTop="6dp"
+                />
+            <EditText
+                android:id="@+id/setting_user_dateOfBirth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/setting_user_country"
+                android:background="@drawable/inputs"
+                android:padding="10dp"
+                android:hint="date of birth"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:textColor="@android:color/background_dark"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginTop="6dp"
+                />
+
+            <EditText
+                android:id="@+id/setting_user_gender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/setting_user_dateOfBirth"
+                android:background="@drawable/inputs"
+                android:padding="10dp"
+                android:hint="Gender"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:textColor="@android:color/background_dark"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginTop="6dp"
+                />
+
+            <EditText
+                android:id="@+id/setting_relationship_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/setting_user_gender"
+                android:background="@drawable/inputs"
+                android:padding="10dp"
+                android:hint="Relationship"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:textColor="@android:color/background_dark"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginTop="6dp"
+                />
+
+            <Button
+                android:id="@+id/setting_account_update_button"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@+id/setting_relationship_status"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/button"
+                android:text="Update Account Setting"
+                android:textSize="20sp"
+                android:layout_margin="20dp"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold"
+                android:textAllCaps="false"
+                />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

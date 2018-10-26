@@ -1,9 +1,79 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/register"
     tools:context="com.example.khokan.dorpon.SetupActivity">
 
-</android.support.constraint.ConstraintLayout>
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/setup_profile_image"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/profile" />
+
+    <EditText
+        android:id="@+id/setup_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/setup_profile_image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/inputs"
+        android:drawableStart="@drawable/username"
+        android:ems="10"
+        android:hint="User Name"
+        android:inputType="textMultiLine"
+        android:padding="14dp" />
+
+    <EditText
+        android:id="@+id/setup_fullname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/setup_username"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/inputs"
+        android:drawableStart="@drawable/name"
+        android:ems="10"
+        android:hint="Full Name"
+        android:inputType="textMultiLine"
+        android:padding="14dp" />
+
+    <EditText
+        android:id="@+id/setup_country"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/setup_fullname"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/inputs"
+        android:drawableStart="@drawable/country"
+        android:ems="10"
+        android:hint="Country"
+        android:inputType="textMultiLine"
+        android:padding="14dp" />
+
+    <Button
+        android:id="@+id/setup_info_save_btn"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/setup_profile_image"
+        android:layout_below="@+id/setup_country"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:textSize="20sp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/button"
+        android:text="Save" />
+
+</RelativeLayout>

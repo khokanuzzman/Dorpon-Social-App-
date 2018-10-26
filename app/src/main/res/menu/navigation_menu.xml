@@ -23,16 +23,15 @@
         android:icon="@drawable/find_people"
         />
     <item
-        android:id="@+id/nav_message"
-        android:title="Messages"
-        android:icon="@drawable/messages"
-        />
-    <item
         android:id="@+id/nav_setting"
         android:title="Setting"
         android:icon="@drawable/settings"
         />
 
+    <item
+        android:id="@+id/nav_message"
+        android:icon="@drawable/messages"
+        android:title="Messages" />
     <item
         android:id="@+id/nav_logout"
         android:title="Logout"
